@@ -1,7 +1,7 @@
 # Tandem indexer pipeline A
 
 This repository is the Node 22.23.1, TypeScript, NestJS, and MySQL implementation of
-Tandem v1 indexer pipeline A. It consumes ordered blocks from Bitcoin Core, records canonical
+Tandem indexer pipeline A. It consumes ordered blocks from Bitcoin Core, records canonical
 protocol observations, maintains a separate mempool overlay, and exposes query and agreement
 surfaces.
 
