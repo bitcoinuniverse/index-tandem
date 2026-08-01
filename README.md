@@ -35,7 +35,7 @@ Compose waits for MySQL, runs TypeORM migrations, and starts the non-root applic
 The image health check probes process liveness at `/health`; `/ready` remains the authoritative
 dependency and synchronization check. Pipeline B is intentionally external to this Compose stack.
 
-The explorer-facing API is under `/v1/tandem/verified`. It returns data only after pipeline A and
+The explorer-facing API is under `/tandem/verified`. It returns data only after pipeline A and
 pipeline B produce trusted, valid, matching agreement tuples at the same canonical height. Mainnet
 access is disabled unless `TANDEM_VERIFIED_MAINNET_ENABLED=true` is set deliberately. See
 `docs/api.md` for the complete contract and `docs/operations.md` for key and release configuration.
